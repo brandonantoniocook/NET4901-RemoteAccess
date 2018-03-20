@@ -39,7 +39,7 @@ def mediaryConfigAdditions(podNumber, Password):
 
   #Add the proper configurations for each line/pod
   if podNumber == 'pod1':
-    #open('pod1.cfg', 'w').close()
+    open('pod1.cfg', 'w').close()
     f=open("pod1.cfg", "a")
     for x in range(0,8):
           f.write('!\nline 1/' + str(x) + '\n  exec-timeout 0 0\n  password ' + Password)
@@ -49,7 +49,7 @@ def mediaryConfigAdditions(podNumber, Password):
     os.remove('pod1.cfg')
   
   if podNumber == 'pod2':
-    #open('pod2.cfg', 'w').close()
+    open('pod2.cfg', 'w').close()
     f=open("pod2.cfg", "a")
     for x in range(8,16):      
           f.write('!\nline 1/' + str(x) + '\n  exec-timeout 0 0\n  password ' + Password)
@@ -59,7 +59,7 @@ def mediaryConfigAdditions(podNumber, Password):
     os.remove('pod2.cfg')
   
   if podNumber == 'pod3':
-    #open('pod3.cfg', 'w').close()
+    open('pod3.cfg', 'w').close()
     f=open("pod3.cfg", "a")
     for x in range(16,24):
           f.write('!\nline 1/' + str(x) + '\n  exec-timeout 0 0\n  password ' + Password)
